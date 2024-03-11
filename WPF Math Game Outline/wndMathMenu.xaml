@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPF_Math_Game_Outline.wndMathMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="wndMathMenu" Height="393" Width="486">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/storm_trooper.png"/>
+        </Grid.Background>
+        <Label Content="Math Game Menu" Height="45" HorizontalAlignment="Center" Margin="0,10,0,0" x:Name="lblMathMain" VerticalAlignment="Top" FontSize="20" Width="176" FontWeight="Bold" Foreground="White" />
+        <Button Content="Play Game" Height="45" HorizontalAlignment="Left" Margin="253,302,0,0" Name="cmdPlayGame" VerticalAlignment="Top" Width="122" FontSize="18" Click="cmdPlayGame_Click" IsEnabled="False" />
+        <Button Content="Enter User Data" FontSize="18" Height="45" HorizontalAlignment="Left" Margin="78,302,0,0" Name="cmdEnterUserData" VerticalAlignment="Top" Width="139" Click="cmdEnterUserData_Click" />
+        <Label x:Name="lblEnterUserData" Content="Please enter user data before playing the game" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="lblEnterData" Content="Enter User Data before playing" HorizontalAlignment="Left" Margin="233,271,0,0" VerticalAlignment="Top" Foreground="Red" Visibility="Hidden"/>
+    </Grid>
+</Window>
